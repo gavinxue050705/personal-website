@@ -9,94 +9,40 @@
     <script src="https://kit.fontawesome.com/7ce154bdf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- -------header-------- -->
 <div id="header">
+    <nav>
+        <a class="name-tag" href="#">Gavin Xue</a>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
     <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
         <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi, I'm <span>Gavin</span><br>Xue from Toronto</h1>
+            <h1>Hi. I'm <span>Gavin Xue</span>.</h1>
         </div>
+        <img class="self-img" src="images/self-picture.jpg" alt="picture of me">
     </div>
 </div>
+
 <!-- ------about------- -->
 <div id="about">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/profile.jpeg" alt="picture of me">
-            </div>
-            <div class="about-col-2">
-                <h2 class="sub-title">About Me</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, deserunt! Quo pariatur dolorum adipisci magnam provident corporis nulla, quod soluta ipsum quasi, porro atque debitis blanditiis nam. Minima, ipsa cum.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Andriod/iOS Apps</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023</span><br>Coding/Robotics Coach at Code-it Hacks</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2023 - Current</span><br>Bachelor of Computer Science at the University of Waterloo</li>
-                        <li><span>2019 - 2023</span><br>International Baccalaureate Diploma Programme at Milliken Mills High School</li>
-                    </ul>
-                </div>
-                
-            </div>
+        <div class="about-text">
+            <p>I am currently a Computer Science student @ <span>University of Waterloo</span>.</p>
         </div>
     </div>
 </div>
-<!-- -------services-------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facere sit fugit ipsam qui, error beatae alias odit, dolor laudantium minus, nam ex excepturi. Distinctio dicta enim nostrum repudiandae.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-arrow-pointer"></i>
-                <h2>UI/UX Design</h2>   
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facere sit fugit ipsam qui, error beatae alias odit, dolor laudantium minus, nam ex excepturi. Distinctio dicta enim nostrum repudiandae.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facere sit fugit ipsam qui, error beatae alias odit, dolor laudantium minus, nam ex excepturi. Distinctio dicta enim nostrum repudiandae.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ---------portfolio--------- -->
-<div id="portfolio">
+
+<!-- ---------projects--------- -->
+<div id="projects">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -126,6 +72,32 @@
             </div>
         </div>
         <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------experience-------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facere sit fugit ipsam qui, error beatae alias odit, dolor laudantium minus, nam ex excepturi. Distinctio dicta enim nostrum repudiandae.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-arrow-pointer"></i>
+                <h2>UI/UX Design</h2>   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facere sit fugit ipsam qui, error beatae alias odit, dolor laudantium minus, nam ex excepturi. Distinctio dicta enim nostrum repudiandae.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facere sit fugit ipsam qui, error beatae alias odit, dolor laudantium minus, nam ex excepturi. Distinctio dicta enim nostrum repudiandae.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
     </div>
 </div>
 <!-- ---------contact----------- -->
