@@ -144,9 +144,13 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 400px;
+    background-color: #11001c;
 }
 .work img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -154,7 +158,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #3a015c);
     border-radius: 10px;
     position: absolute;
     left: 0;
